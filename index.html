@@ -14,34 +14,44 @@
   <body class="page">
     <header class="header">
       <div class="container head">
-        <nav class="site-nav">
+        <nav class="navigation">
           <a href="./index.html" class="logo"
-            ><span class="logoblue">Web</span>Studio</a
+            ><span class="logo--accent">Web</span>Studio</a
           >
-          <ul class="site-nav list">
-            <li class="site-nav item">
-              <a href="./index.html" class="link nav current">Студия</a>
+          <ul class="navigation navigation__list list">
+            <li class="navigation navigation__item">
+              <a href="./index.html" class="navigation__link link link--current"
+                >Студия</a
+              >
             </li>
-            <li class="site-nav item">
-              <a href="./portfolio.html" class="link nav">Портфолио</a>
+            <li class="navigation navigation__item">
+              <a href="./portfolio.html" class="navigation__link link"
+                >Портфолио</a
+              >
             </li>
-            <li class="site-nav item">
-              <a href="#contacts" class="link nav">Контакты</a>
+            <li class="navigation navigation__item">
+              <a href="#contacts" class="navigation__link link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="site-nav list">
-          <li class="site-nav item">
-            <a href="mailto:info@devstudio.com" class="link nav mail">
-              <svg class="envelope-icon">
+        <ul class="navigation navigation__list list">
+          <li class="navigation navigation__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="navigation__link link navigation__mail"
+            >
+              <svg class="navigation__mail--envelope">
                 <use href="./img/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="site-nav item">
-            <a href="tel:+380961111111" class="link nav phone">
-              <svg class="smartphone-icon">
+          <li class="navigation navigation__item">
+            <a
+              href="tel:+380961111111"
+              class="navigation__link link navigation__phone"
+            >
+              <svg class="navigation__phone--smartphone">
                 <use href="./img/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -53,60 +63,60 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="button" type="button" data-modal-open>
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <button class="hero__button button" type="button" data-modal-open>
           Заказать услугу
         </button>
       </section>
-      <section class="section feature">
-        <div class="container feature">
-          <h2 class="section-title no-title">Особенности</h2>
-          <ul class="feature list">
-            <li class="feature item">
-              <div class="feature-icon-block">
-                <svg class="feature-icon">
+      <section class="section feature__section">
+        <div class="container">
+          <h2 class="section__title--no-title">Особенности</h2>
+          <ul class="feature__list list">
+            <li class="feature__item">
+              <div class="feature__icon-block">
+                <svg class="feature__icon">
                   <use href="./img/sprite.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="feature-text">
+              <h3 class="feature__block-title">Внимание к деталям</h3>
+              <p class="feature__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="feature item">
-              <div class="feature-icon-block">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__icon-block">
+                <svg class="feature__icon">
                   <use href="./img/sprite.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Пунктуальность</h3>
-              <p class="feature-text">
+              <h3 class="feature__block-title">Пунктуальность</h3>
+              <p class="feature__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="feature item">
-              <div class="feature-icon-block">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__icon-block">
+                <svg class="feature__icon">
                   <use href="./img/sprite.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="feature-title">Планирование</h3>
-              <p class="feature-text">
+              <h3 class="feature__block-title">Планирование</h3>
+              <p class="feature__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="feature item">
-              <div class="feature-icon-block">
-                <svg class="feature-icon">
+            <li class="feature__item">
+              <div class="feature__icon-block">
+                <svg class="feature__icon">
                   <use href="./img/sprite.svg#astronaut"></use>
                 </svg>
               </div>
 
-              <h3 class="feature-title">Современные технологии</h3>
-              <p class="feature-text">
+              <h3 class="feature__block-title">Современные технологии</h3>
+              <p class="feature__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -116,7 +126,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="we-do list">
             <li class="we-do item">
               <div class="we-do-title">
@@ -159,7 +169,7 @@
       </section>
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team list">
             <li class="team item">
               <img
@@ -330,7 +340,7 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="clients section-title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients list">
             <li class="clients item">
               <a href="" class="clients-link">
@@ -382,8 +392,8 @@
     <footer>
       <div class="container footer">
         <div class="contacts-footer" id="contacts">
-          <a href="./index.html" class="logo footerlogo"
-            ><span class="logoblue">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo"
+            ><span class="logo--accent">Web</span>Studio</a
           >
           <address class="address">
             <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -457,7 +467,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" type="button" data-modal-close>
+        <button class="button__close" type="button" data-modal-close>
           <svg class="icon-close">
             <use href="./img/sprite.svg#close"></use>
           </svg>

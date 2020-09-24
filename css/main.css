@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Переменная */
+/* $color: blue;
+$mainWidth: 100%;
+
+body{
+    background-color: $color;
+    width: $mainWidth;
+}
+ */
+/* .box{
+    background-color:red;
+}
+ .box:hover .button{
+background-color: blueviolet;
+ } */
+/*  .sass_box{
+     background-color: red;
+
+     &:hover .button{
+         background-color: blueviolet;
+     }
+ } */
+.button {
+  background-color: blueviolet;
+}
+
+.buttonhover, .buttonfocus {
+  background-color: red;
+}
+
+.sass_box:hover .button {
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */

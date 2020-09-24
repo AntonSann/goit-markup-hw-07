@@ -1,0 +1,33 @@
+/* Переменная
+  $color: blue;
+$mainWidth: 100%;
+
+body{
+    background-color: $color;
+    width: $mainWidth;
+} */
+/* .box{
+    background-color:red;
+}
+ .box:hover .button{
+background-color: blueviolet;
+ } */
+/*  .sass_box{
+     background-color: red;
+
+     &:hover .button{
+         background-color: blueviolet;
+     }
+ } */
+
+@import "./variables";
+.button {
+  background-color: blueviolet;
+  &hover,
+  &focus {
+    background-color: red;
+  }
+  .sass_box:hover & {
+    background-color: blue;
+  }
+}
