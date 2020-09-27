@@ -3,16 +3,14 @@
 }
 
 .feature__list {
-  display: flex;
-  justify-content: center;
+  @include flexbox(flex, center);
 }
 .feature__block-title {
   margin-bottom: 10px;
   color: $title-text-color;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700);
+
   text-transform: uppercase;
 }
 .feature__item {
@@ -37,6 +35,5 @@
 }
 
 .feature__text {
-  font-size: 14px;
-  line-height: 1.7;
+  @include font(14px, 1.7);
 }

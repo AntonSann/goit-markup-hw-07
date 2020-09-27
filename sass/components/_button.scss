@@ -6,23 +6,21 @@
   color: $white-color;
 
   font-family: inherit;
+
+  @include font(16px, 1.9, 700, 0.06em);
+
   text-decoration: none;
   text-align: center;
 }
 
 .hero__button {
-  display: flex;
-  align-items: center;
+  @include flexbox(flex, $ai: center);
+
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
   border: 0;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   &:hover {
@@ -38,9 +36,7 @@
   background-color: $grey-background;
   color: $title-text-color;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  @include font(16px, 1.6, 500);
 
   &:hover,
   &:focus {
@@ -51,8 +47,7 @@
 }
 
 .subscribe__button {
-  display: flex;
-  align-items: center;
+  @include flexbox(flex, $ai: center);
 
   min-width: 200px;
   min-height: 50px;
@@ -60,11 +55,7 @@
   border: 0;
 
   text-align: left;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
 
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   &:hover,
@@ -87,10 +78,7 @@
 
 .button__close {
   position: absolute;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox(flex, center, center);
 
   right: 8px;
   top: 8px;
@@ -130,11 +118,6 @@
   padding: 10px 32px;
   border: 0;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-
-  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: $accent-color;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -10,6 +10,5 @@
   border-bottom: 1px solid #ececec;
 }
 .container__header {
-  display: flex;
-  justify-content: space-between;
+  @include flexbox(flex, space-between);
 }

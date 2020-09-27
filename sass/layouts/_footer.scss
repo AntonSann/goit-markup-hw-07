@@ -7,9 +7,9 @@
 .address {
   color: $white-color;
 
+  @include font(14px, 1.7);
+
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.7;
 }
 .address__text {
   display: inline-block;
@@ -27,13 +27,11 @@
 .footer__link {
   display: inline-block;
   color: $footer-link-color;
-
   font-weight: 400;
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @include flexbox(flex, $ai: baseline);
 }
 
 .footer__contacts {
@@ -45,9 +43,7 @@
 }
 
 .join__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14, 700);
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 20px;
@@ -70,8 +66,7 @@
   border-radius: 4px;
 
   &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 1.25);
 
     color: rgba(255, 255, 255, 0.6);
   }

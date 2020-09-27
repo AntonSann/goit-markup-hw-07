@@ -34,9 +34,8 @@
 .modal__title {
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1, 15;
+  @include font(20px, 1.15, 700);
+
   text-align: center;
 
   color: $title-text-color;

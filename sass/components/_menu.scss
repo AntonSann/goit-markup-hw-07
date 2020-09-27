@@ -1,6 +1,5 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  @include flexbox(flex, $ai: center);
 }
 
 .navigation__list {
@@ -15,8 +14,8 @@
 
 .navigation__mail {
   color: $primary-text-color;
-  display: inline-flex;
-  align-items: center;
+
+  @include flexbox(inline-flex, $ai: center);
 }
 
 .navigation__mail--envelope {
@@ -31,8 +30,7 @@
 
 .navigation__phone {
   color: $primary-text-color;
-  display: inline-flex;
-  align-items: center;
+  @include flexbox(inline-flex, $ai: center);
 }
 
 .navigation__phone--smartphone {
