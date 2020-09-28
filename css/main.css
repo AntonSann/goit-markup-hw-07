@@ -343,35 +343,35 @@ template {
 
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Medium.ttf");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Bold.ttf");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url("../fonts/Roboto-Black.ttf");
+  src: url("../fonts/Roboto-Black.woff2") format("woff2"), url("../fonts/Roboto-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: Raleway;
-  src: url("../fonts/Raleway-Bold.ttf");
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -431,14 +431,6 @@ img {
   color: #2196f3;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .list__center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,6 +441,14 @@ img {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
@@ -693,12 +693,12 @@ img {
   background-position: center;
 }
 
-.link--current {
+.navigation__link--current {
   position: relative;
   color: #2196f3;
 }
 
-.link--current::after {
+.navigation__link--current::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -745,6 +745,8 @@ img {
   color: #afb1b8;
   background-color: #ffffff;
   border-radius: 50%;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__icon:hover, .social__icon:focus {
@@ -780,6 +782,8 @@ img {
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__social__icon:hover, .footer__social__icon:focus {
@@ -937,7 +941,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foem {
+.form__agreement {
   margin-bottom: 30px;
 }
 
@@ -945,7 +949,7 @@ img {
   margin-bottom: 20px;
 }
 
-.foem__label {
+.form__agreement-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,11 +965,11 @@ img {
   letter-spacing: 0.03em;
 }
 
-.foem__link {
+.form__agreement-link {
   color: #2196f3;
 }
 
-.checkbox {
+.form__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -976,11 +980,11 @@ img {
   overflow: hidden;
 }
 
-.checkbox:hover + .checkbox__icon-check {
+.form__checkbox:hover + .form__checkbox-check {
   border-color: #2196f3;
 }
 
-.checkbox:checked + .checkbox__icon-check {
+.form__checkbox:checked + .form__checkbox-check {
   width: 16px;
   height: 15px;
   background-image: url("../img/check.svg");
@@ -992,7 +996,7 @@ img {
   background-position: center;
 }
 
-.checkbox__icon-check {
+.form__checkbox-check {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -1268,6 +1272,8 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients__link:hover {

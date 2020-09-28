@@ -61,7 +61,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foem {
+.form__agreement {
   margin-bottom: 30px;
 }
 
@@ -69,17 +69,17 @@
   margin-bottom: 20px;
 }
 
-.foem__label {
+.form__agreement-label {
   @include flexbox(flex, $ai: center);
 
   @include font(14px, 1.71);
 }
 
-.foem__link {
+.form__agreement-link {
   color: $accent-color;
 }
 
-.checkbox {
+.form__checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -89,11 +89,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:hover + .checkbox__icon-check {
+  &:hover + .form__checkbox-check {
     border-color: $accent-color;
   }
 
-  &:checked + .checkbox__icon-check {
+  &:checked + .form__checkbox-check {
     width: 16px;
     height: 15px;
     background-image: url("../img/check.svg");
@@ -106,7 +106,7 @@
   }
 }
 
-.checkbox__icon-check {
+.form__checkbox-check {
   display: inline-block;
   width: 16px;
   height: 15px;
